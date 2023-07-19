@@ -1,5 +1,5 @@
 import { join } from "$std/path/mod.ts";
-import { extract } from "$std/front_matter/any.ts";
+import { extract } from "$std/front_matter/yaml.ts";
 
 export interface Post {
   slug: string;
