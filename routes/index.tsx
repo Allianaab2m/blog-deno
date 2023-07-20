@@ -47,7 +47,7 @@ export default function BlogIndexPage(props: PageProps<Post[]>) {
   const posts = props.data;
   return (
     <main class="max-w-screen-md px-4 pt-16 mx-auto">
-      <h1 class="text-5xl font-bolf">Blog</h1>
+      <h1 class="text-5xl font-bolf">ありあなのBlog</h1>
       <div class="mt-8">
         {posts.map((p) => <PostCard post={p} />)}
       </div>
