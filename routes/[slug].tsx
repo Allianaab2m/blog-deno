@@ -4,6 +4,8 @@ import { PageProps } from "$fresh/server.ts";
 import { CSS, render } from "$gfm";
 import { Head } from "$fresh/runtime.ts";
 
+import FixAtGithubButton from "@/components/FixAtGithubButton.tsx";
+
 export const handler: Handlers<Post> = {
   async GET(_req, ctx) {
     const post = await getPost(ctx.params.slug);
@@ -32,6 +34,7 @@ export default function PostPage(props: PageProps<Post>) {
           class="mt-8 markdown-body"
           dangerouslySetInnerHTML={{ __html: render(post.content) }}
         />
+        <FixAtGithubButton slug={props.data.slug} />
       </main>
     </>
   );
