@@ -34,6 +34,7 @@ export default function PostPage(props: PageProps<Post>) {
           class="mt-8 markdown-body"
           dangerouslySetInnerHTML={{ __html: render(post.content) }}
         />
+        <hr />
         <FixAtGithubButton slug={props.data.slug} />
       </main>
     </>
