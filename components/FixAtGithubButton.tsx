@@ -6,7 +6,7 @@ export default function FixAtGithubButton(props: { slug: string }) {
     `https://github.com/Allianaab2m/blog-deno/edit/main/posts/${slug}.md`;
   return (
     <a href={editLink}>
-      <button class="flex border">
+      <button class="my-2 flex border rounded">
         <IconBrandGithub class="w-6 h-6 m-2" />
         <p class="m-2">この記事をGitHubで編集する</p>
       </button>
